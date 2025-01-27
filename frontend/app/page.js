@@ -1,6 +1,6 @@
 "use client";  
 
-const apiUrl = "http://localhost:4000/api/v1/mailAi";
+const apiUrl = process.env.NEXT_PUBLIC_API_URL ||"http://localhost:4000/api/v1/mailAi";
 import React, { useState } from "react";
 
 export default function Home() {
