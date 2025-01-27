@@ -2,10 +2,12 @@ import express from 'express';
 const app = express(); 
 import  morgan from 'morgan';
 import mailAi from "./route/mailAi.js"
+import cors from 'cors'
+app.use(cors()) ; 
 app.use(morgan('dev')) ; 
 app.use(express.json())  ;  
 
-const PORT = 3000 ; 
+const PORT = 4000 ; 
 
  
   
